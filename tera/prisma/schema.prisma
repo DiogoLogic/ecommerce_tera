@@ -9,3 +9,24 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Category{
+  id String @id @default(uuid())
+  name String
+  slug String
+  imagemUrl String
+  products Product[]
+}
+
+model Product{
+  id String @id @default(uuid())
+  name String
+  slug String
+  description String
+  basePrice Decimal @db.Decimal(8,2)
+  imagemUrl String
+  category Category @relation(fields: [categotyId], references: [id])
+  categotyId String
+  discountPercentage Int @default(0)
+ 
+}
