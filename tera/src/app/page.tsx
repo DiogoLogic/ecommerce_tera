@@ -5,7 +5,7 @@ export default function Home() {
       <div className='
       text-red-500 bg-blue-500'
        >
-        <h1>test</h1>
+        <h1>test Diogo</h1>
 
       </div>
   )
