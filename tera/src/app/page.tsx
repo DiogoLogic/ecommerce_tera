@@ -2,10 +2,9 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-      <div className='
-      text-red-500 bg-blue-500'
+      <div className=''
        >
-        <h1>test Diogo</h1>
+        <h1>home</h1>
 
       </div>
   )
